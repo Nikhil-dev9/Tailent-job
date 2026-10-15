@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -93,9 +95,13 @@
           </label>
         </div>
 
+        <input type="radio" name="page" id="p1" checked hidden>
+        <input type="radio" name="page" id="p2" hidden>
+        <input type="radio" name="page" id="all" hidden>
+
         <div class="grid">
 
-          <div class="card">
+          <div class="card page1 all">
             <div class="card-top">
               <div>
                 <h3>Senior Frontend Engineer</h3>
@@ -111,7 +117,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card  page1 all">
             <div class="card-top">
               <div>
                 <h3>Product Designer</h3>
@@ -127,7 +133,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card  page1 all">
             <div class="card-top">
               <div>
                 <h3>Data Scientist</h3>
@@ -143,7 +149,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card  page1 all">
             <div class="card-top">
               <div>
                 <h3>DevOps Engineer</h3>
@@ -159,7 +165,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card  page1 all">
             <div class="card-top">
               <div>
                 <h3>Product Manager</h3>
@@ -175,7 +181,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page1 all">
             <div class="card-top">
               <div>
                 <h3>UX Researcher</h3>
@@ -191,7 +197,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Backend Developer</h3>
@@ -207,7 +213,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Marketing Intern</h3>
@@ -223,7 +229,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Cloud Architect</h3>
@@ -232,14 +238,15 @@
               <div class="company-icon">📦</div>
             </div>
             <div class="meta"><span>📍 Seattle, WA</span><span>🕒 1w ago</span></div>
-            <div class="tags"><span class="tag green">Full Time</span><span class="tag blue">Azure</span><span class="tag blue">AWS</span></div>
+            <div class="tags"><span class="tag green">Full Time</span><span class="tag blue">Azure</span><span
+                class="tag blue">AWS</span></div>
             <div class="card-bottom">
               <div class="salary">$160K–$210K <small>/ year</small></div>
               <button class="btn outline">Apply</button>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Content Writer</h3>
@@ -255,7 +262,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Mobile App Developer</h3>
@@ -271,7 +278,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card page2 all">
             <div class="card-top">
               <div>
                 <h3>Customer Success Lead</h3>
@@ -291,12 +298,11 @@
 
         <!-- PAGINATION -->
         <div class="pagination">
-        
-          <a href="#" class="page-btn current">1</a>
-          <a href="#" class="page-btn">2</a>
-          <a href="#" class="page-btn">3</a>
-          <span class="dots">…</span>
-          
+          <label for="p1" class="page-btn">1</label>
+          <label for="p2" class="page-btn">2</label>
+          <label for="all" class="page-btn">All</label>
+
+
         </div>
       </section>
     </div>
@@ -365,4 +371,5 @@
   </footer>
 
 </body>
+
 </html>
